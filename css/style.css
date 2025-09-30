@@ -164,7 +164,8 @@ main h1 {
   align-items: center;
   text-align: center;
   flex-direction: row;
-  gap: 5rem;
+  gap: 6rem;
+  padding: 5rem;
 }
 
 .juego-producto {
