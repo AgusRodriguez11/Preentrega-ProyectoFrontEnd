@@ -6,6 +6,13 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
+/* Para no tener espacios en el footer y header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Saira Condensed", sans-serif;
   font-size: 1.6rem;
@@ -21,7 +28,6 @@ body {
 
 .header {
   background-color: #1d1a20;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,6 +134,7 @@ main h1 {
   border-radius: 10px;
   display: inline-block;
   color: #fff;
+  width: 100%;
 }
 
 .productos-home {
@@ -152,12 +159,12 @@ main h1 {
 
 .contenedor-juegos {
   display: flex;
-  justify-content: space-between; /* o space-between según prefieras */
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
   flex-direction: row;
-  gap: 5rem; /* evita que se peguen demasiado */
+  gap: 5rem;
 }
 
 .juego-producto {
@@ -212,7 +219,7 @@ main h1 {
   padding: 2rem;
   text-align: center;
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
-  width: 50rem;
+  width: 60rem;
   margin-bottom: 3rem;
 }
 
@@ -237,6 +244,12 @@ main h1 {
   padding: 1rem;
   margin-top: 1rem;
 }
+
+.mensaje textarea {
+  width: 80%;
+  height: auto;
+}
+
 .boton-enviar {
   padding: 0.8rem 2rem;
   border: none;
@@ -253,4 +266,79 @@ main h1 {
 .boton-enviar:hover {
   background-color: #e76f51;
   color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+  }
+
+  .header__nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.1rem;
+  }
+
+  .header__nav li {
+    font-size: 2rem;
+  }
+
+  .titulo-home {
+    background: linear-gradient(#ff004c, #33001b);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 3rem; /* tamaño de fuente más pequeño */
+    width: 80%;
+  }
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 8rem;
+  }
+
+  .footer nav ul {
+    flex-direction: row;
+    flex: wrap;
+    gap: 1rem;
+  }
+
+  main {
+    width: 95%;
+    margin: 2rem auto 0 auto;
+  }
+
+  .contenedor-juegos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .juego-producto {
+    width: 70%; /* ocupa casi todo el ancho */
+  }
+
+  .juego-producto img {
+    width: 100%;
+    height: auto;
+  }
+
+  .juego-producto h3 {
+    font-size: 2rem;
+    width: auto;
+  }
+  .formulario-contacto {
+    width: 100%;
+  }
+
+  .formulario-contacto input {
+    width: 9.5rem;
+  }
 }
