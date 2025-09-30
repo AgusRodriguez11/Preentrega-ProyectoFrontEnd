@@ -1,0 +1,256 @@
+html {
+  /* Sin congiguracion el rem vale: */
+  /* 1rem = 16px */
+
+  /* Para que 1 rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #d21f3c;
+  color: #e5e6e8;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #1d1a20;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  text-decoration: none; /* quita el subrayado si no lo querés */
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header__logo a {
+  text-decoration: none;
+  color: #f7bb2b;
+}
+
+.header__logo:hover {
+  color: #956e11;
+}
+
+.header__nav {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__nav li {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header__nav a {
+  color: #f7bb2b;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.header__nav a:hover {
+  color: #9b7213;
+}
+
+.footer {
+  background-color: #1d1a20;
+
+  padding: 1rem;
+  color: #f7bb2b;
+  margin: 1rem 0 0 0;
+  /* hago flexibles al p y la nav */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer nav ul {
+  list-style: none;
+
+  /* hago flexibles a los li de la lista */
+  display: flex;
+  justify-content: left;
+  gap: 2rem; /* 20px */
+  margin-top: auto;
+}
+
+.footer nav ul a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #f7bb2b;
+}
+.footer nav ul a:hover {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #9b7213;
+}
+
+/* HOME */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90%;
+  flex: 1;
+  margin: 3rem auto 0 auto; /* solo margen arriba */
+}
+
+main h1 {
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+.titulo-home {
+  background: linear-gradient(#ff004c, #33001b);
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.productos-home {
+  width: 100%;
+}
+
+.productos-home h3 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  color: #fefdff;
+  border-radius: 1rem;
+  background-color: #33473ef0;
+}
+
+.productos-home h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  color: #fefdff;
+}
+
+.contenedor-juegos {
+  display: flex;
+  justify-content: space-between; /* o space-between según prefieras */
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 5rem; /* evita que se peguen demasiado */
+}
+
+.juego-producto {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+  width: 22rem;
+}
+
+.juego-producto:hover {
+  transform: scale(1.05);
+  transition: transform 0.9s;
+}
+
+.juego-producto h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.juego-producto img {
+  width: 20rem;
+  height: 27rem;
+  padding: 0.1rem;
+}
+
+.juego-producto p {
+  color: #bbb;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.boton-Producto {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-Producto:hover {
+  background: #681f0d;
+  color: #f7bb2b;
+}
+
+/* CONTACTO */
+
+.formulario-contacto {
+  background: #712626;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+  width: 50rem;
+  margin-bottom: 3rem;
+}
+
+.formulario-contacto h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: "Goldman", sans-serif;
+  color: #fefdff;
+}
+
+.formulario-contacto label {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Goldman", sans-serif;
+  color: #fff5f5bf;
+}
+
+.mensaje {
+  font-family: "Goldman", sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.boton-enviar {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4a261;
+  color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 10rem;
+  margin-top: 1rem;
+}
+.boton-enviar:hover {
+  background-color: #e76f51;
+  color: #fff;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__logo">
+        <a href="../index.html">GAMING SHOP</a>
+      </p>
+      <nav class="header__nav">
+        <ul class="lista">
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form
+        action="https://formspree.io/f/mblazllz"
+        method="POST"
+        class="formulario-contacto"
+      >
+        <h1>CONTACTA A GAMING SHOP!</h1>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="id" required />
+          <label for="email"> Correo electronico</label>
+          <input type="email" name="email" required />
+        </div>
+        <fieldset class="mensaje">
+          <legend>Mensaje:</legend>
+
+          <textarea name="message" cols="50" rows="10"></textarea>
+        </fieldset>
+        <!-- your other form fields go here -->
+        <div>
+          <button type="submit" class="boton-enviar">Enviar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <h2>REDES SOCIALES</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://youtube.com" aria-label="YouTube" target="_blank "
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://facebook.com"
+              aria-label="Facebook"
+              target="_blank "
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com"
+              aria-label="Instagram"
+              target="_blank "
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
