@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Goldman", sans-serif;
 }
 
 .header__logo {
@@ -88,6 +89,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Goldman", sans-serif;
 }
 
 .footer nav ul {
@@ -101,12 +103,12 @@ body {
 }
 
 .footer nav ul a {
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #f7bb2b;
 }
 .footer nav ul a:hover {
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #9b7213;
 }
@@ -130,8 +132,9 @@ main h1 {
 
 .titulo-home {
   background: linear-gradient(#ff004c, #33001b);
-  padding: 15px 25px;
-  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 5rem;
+  border-radius: 20px;
   display: inline-block;
   color: #fff;
   width: 100%;
