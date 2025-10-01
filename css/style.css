@@ -162,7 +162,7 @@ main h1 {
 
 .contenedor-juegos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
