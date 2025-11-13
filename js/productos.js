@@ -1,0 +1,18 @@
+export const productos = [
+  { id: "1", nombre: "The Last Of Us II", img: "img/tlou.jpg", precio: 30000 },
+  { id: "2", nombre: "God OF War", img: "img/gow.jpg", precio: 35000 },
+  {
+    id: "3",
+    nombre: "Ghost of Tushima",
+    img: "img/ghostoftushima.jpg",
+    precio: 30000,
+  },
+  { id: "4", nombre: "F1 22", img: "img/f122.jpg", precio: 20000 },
+  {
+    id: "5",
+    nombre: "God Of War Ragnarok",
+    img: "img/godofwar.jpg",
+    precio: 40000,
+  },
+  { id: "6", nombre: "EA FC 26", img: "img/fc26.jpg", precio: 70000 },
+];
