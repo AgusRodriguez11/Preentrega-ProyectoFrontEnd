@@ -59,9 +59,8 @@ throw new Error (`ERROR HTTP status:${res.status}`)
     divTarjetas.appendChild(tarjetaProducto);
   });
   sectionContainer.appendChild(divTarjetas);
-});
-})
+  })
 .catch((err)=>{console.log(err)});
-  
+}); 
  
  
