@@ -60,7 +60,5 @@ throw new Error (`ERROR HTTP status:${res.status}`)
   });
   sectionContainer.appendChild(divTarjetas);
   })
-.catch((err)=>{console.log(err)});
-}); 
- 
- 
+.catch((err)=>{console.log(err)})
+});
