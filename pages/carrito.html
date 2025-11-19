@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito</title>
     <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <p class="header__logo">
-        <a href="../index.html">Tienda Embark</a>
+        <a href="../index.html">GAMING SHOP</a>
       </p>
       <nav class="header__nav">
         <ul class="lista">
@@ -37,21 +55,33 @@
       <div class="acciones-carrito" id="acciones-carrito">
         <!-- Botones de eliminar y finalizar compra se agregan desde JS -->
       </div>
-      <section id="resumen-carrito">
+      <section id="resumen-carrito" class="contenedor-carrito">
         <!-- Aca ira el resumen del carrito -->
       </section>
     </main>
+
     <footer class="footer">
-      <p>Esta pagina la diseño Belu</p>
-      <p>&copy; 2025 Mi E-Commerce</p>
+      <h2>REDES SOCIALES</h2>
       <nav>
         <ul>
-          <li>Instagram</li>
-          <li>Tiktok</li>
-          <li>X</li>
+          <li>
+            <a href="https://www.tiktok.com" target="_blank "
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank "
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank "
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </footer>
-    <script type="module" src="../js/funcionescarrito.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
-import { productos } from "./productos.js";
 import { obtenerCarrito } from "./storage.js";
 import { actualizarContador } from "./ui.js";
 import { agregarAlCarrito } from "./funcionescarrito.js";
@@ -13,8 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const carrito = obtenerCarrito();
   actualizarContador(carrito);
-  // 🔹 Generamos dinámicamente cada producto
-  productos.forEach((producto) => {
+
+
+fetch("./data/productos.json")
+.then((res)=>{
+  if(!res.ok){
+throw new Error (`ERROR HTTP status:${res.status}`)
+  }
+  return res.json();
+}
+)
+.then((data)=>{
+   data.forEach((producto) => {
     // Article
     const tarjetaProducto = document.createElement("article");
     tarjetaProducto.classList.add("juego-producto");
@@ -51,3 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   sectionContainer.appendChild(divTarjetas);
 });
+})
+.catch((err)=>{console.log(err)});
+  
+ 
+ 
